@@ -1,0 +1,564 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: S1_R3_R4 - AT5_PBE 2
+meta:
+  id: wrk_28cc2b0e60364776b7a6e093bb2d80ef
+  created: 1778160415055
+  modified: 1778160415055
+  description: ""
+collection:
+  - name: Categoria
+    meta:
+      id: fld_618d42f0599b46198a5f267d71d58ee9
+      created: 1778160429942
+      modified: 1778160429942
+      sortKey: -1778160429942
+      description: ""
+    children:
+      - url: http://localhost:8080/categorias
+        name: New Request
+        meta:
+          id: req_8bc281bb8d8e493bae8b233029653e72
+          created: 1778160432589
+          modified: 1778161186207
+          isPrivate: false
+          description: ""
+          sortKey: -1778160438186
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/categorias
+        name: New Request
+        meta:
+          id: req_2024ed370c33480daf4939729d1cee6f
+          created: 1778160434033
+          modified: 1778757989265
+          isPrivate: false
+          description: ""
+          sortKey: -1778160438086
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "nome": "Armazenamento",
+              "descricao": "SSDs, HDs externos e pen drives"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/categorias/2
+        name: New Request
+        meta:
+          id: req_fae5e9d78cc7468e86ba581ea24254b7
+          created: 1778160435339
+          modified: 1778161387141
+          isPrivate: false
+          description: ""
+          sortKey: -1778160437986
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "nome": "Informática",
+              "descricao": "Computadores, mouses e teclados"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/categorias/3
+        name: New Request
+        meta:
+          id: req_6af37bbcf0b9410bb872321a2aff6f7f
+          created: 1778160436617
+          modified: 1778757827727
+          isPrivate: false
+          description: ""
+          sortKey: -1778160437886
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Produto
+    meta:
+      id: fld_e0334fe681ac42ccad7db29dbb7e849b
+      created: 1778162454114
+      modified: 1778162454114
+      sortKey: -1778162454114
+      description: ""
+    children:
+      - url: http://localhost:8080/produtos
+        name: New Request
+        meta:
+          id: req_2f8cf0853a204ce78af62741d4c36ec8
+          created: 1778162470691
+          modified: 1778167552041
+          isPrivate: false
+          description: ""
+          sortKey: -1778162478361
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/produtos/2
+        name: New Request
+        meta:
+          id: req_d39a3b9acc45479babc2b14aebb9578d
+          created: 1778162472134
+          modified: 1778167930615
+          isPrivate: false
+          description: ""
+          sortKey: -1778162478261
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/produtos
+        name: New Request
+        meta:
+          id: req_ff47bd746b7749428f6a4171c4bd3152
+          created: 1778162473378
+          modified: 1778761903954
+          isPrivate: false
+          description: ""
+          sortKey: -1778162478161
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: idCategoria
+              value: "8"
+              description: ""
+              disabled: false
+            - name: nome
+              value: SSD WD Green
+              description: ""
+              disabled: false
+            - name: descricao
+              value: SSD SATA III de 480GB com leitura de até 545 MB/s. Solução acessível para
+                upgrade de notebooks e desktops, com baixo consumo de energia e
+                alta confiabilidade
+              description: ""
+              disabled: false
+            - name: preco
+              value: "249.90"
+              description: ""
+              disabled: false
+            - name: quantidadeEstoque
+              value: "45"
+              description: ""
+              disabled: false
+            - name: imagem
+              value: ""
+              description: ""
+              disabled: false
+              fileName: C:\Users\49090085866\Downloads\SSD WD Green.jpg
+              type: file
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/produtos/1
+        name: New Request
+        meta:
+          id: req_b92817e9dadd4311bc63518577da0a1e
+          created: 1778162474564
+          modified: 1778168585716
+          isPrivate: false
+          description: ""
+          sortKey: -1778162478061
+        method: PUT
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: idCategoria
+              value: "2"
+              description: ""
+              disabled: false
+            - name: nome
+              value: Teclado mecânico
+              description: ""
+              disabled: false
+            - name: descricao
+              value: Teclado profissional para jogos eletrônicos
+              description: ""
+              disabled: false
+            - name: preco
+              value: "399.99"
+              description: ""
+              disabled: false
+            - name: quantidadeEstoque
+              value: "5"
+              description: ""
+              disabled: false
+            - name: imagem
+              value: ""
+              description: ""
+              disabled: false
+              fileName: C:\Users\49090085866\Downloads\teclado mecanico.jpg
+              type: file
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/produtos/5
+        name: New Request
+        meta:
+          id: req_15542751ec4444a7b493586e82f77836
+          created: 1778162475678
+          modified: 1778757806589
+          isPrivate: false
+          description: ""
+          sortKey: -1778162477961
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Pedido
+    meta:
+      id: fld_db2a3ee7d01d407682dd32cd2631d3f2
+      created: 1778169903009
+      modified: 1778169903009
+      sortKey: -1778169903009
+      description: ""
+    children:
+      - url: http://localhost:8080/pedidos
+        name: New Request
+        meta:
+          id: req_9d0b84fbba804c869218c2183cc5b50d
+          created: 1778169906126
+          modified: 1778761958223
+          isPrivate: false
+          description: ""
+          sortKey: -1778169917904
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "itens": [
+                {
+                  "idProduto": 6,
+                  "quantidade": 2,
+                  "valorUnitario": 3499.99
+                },
+                {
+                  "idProduto": 7,
+                  "quantidade": 2,
+                  "valorUnitario": 33199.99
+                }
+              ]
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/pedidos/4/itens
+        name: New Request
+        meta:
+          id: req_4d9e8c47267d4b49b67a1a338adbeb7f
+          created: 1778169907631
+          modified: 1778762024099
+          isPrivate: false
+          description: ""
+          sortKey: -1778169917804
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "idProduto": 8,
+              "quantidade": 2,
+              "valorUnitario": 4299.99
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/pedidos/1/itens/1
+        name: New Request
+        meta:
+          id: req_505a7ef443354f969926e2c4ec4fd02c
+          created: 1778169908881
+          modified: 1778170967152
+          isPrivate: false
+          description: ""
+          sortKey: -1778169917704
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/pedidos/3
+        name: New Request
+        meta:
+          id: req_5ff63d52f0aa49a1b073a0cfe97047f6
+          created: 1778169910437
+          modified: 1778757773472
+          isPrivate: false
+          description: ""
+          sortKey: -1778169917604
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/pedidos/1/status
+        name: New Request
+        meta:
+          id: req_6d95875c205f4c32bd7a72586fa918ca
+          created: 1778169911853
+          modified: 1778170781797
+          isPrivate: false
+          description: ""
+          sortKey: -1778169917504
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "status": "Finalizado" 
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/pedidos/1/itens/1
+        name: New Request
+        meta:
+          id: req_b9f33d8c62fa444b959e56d5d709941f
+          created: 1778169912922
+          modified: 1778170923258
+          isPrivate: false
+          description: ""
+          sortKey: -1778169917404
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "quantidade": 3
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/pedidos
+        name: New Request
+        meta:
+          id: req_cfcf5e1684d749e29e9389c42e5a5f88
+          created: 1778169914035
+          modified: 1778170653692
+          isPrivate: false
+          description: ""
+          sortKey: -1778169917304
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/pedidos/3
+        name: New Request
+        meta:
+          id: req_fb77059f62874aaa8524e830599ca029
+          created: 1778169915288
+          modified: 1778171759726
+          isPrivate: false
+          description: ""
+          sortKey: -1778169917204
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_d576a75f0103ba1c8daa1344152496a05c16ab74
+    created: 1778160415061
+    modified: 1778160415061
+environments:
+  name: Base Environment
+  meta:
+    id: env_d576a75f0103ba1c8daa1344152496a05c16ab74
+    created: 1778160415058
+    modified: 1778160415058
+    isPrivate: false
